@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>T. Sujatha's Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: #f4f4f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    nav {
+      background-color: #333;
+      padding: 15px;
+      position: sticky;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+    }
+
+    nav ul li {
+      margin: 0 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #f1c40f;
+    }
+
+    header {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 60px 0;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2em;
+    }
+
+    .section {
+      padding: 60px 20px;
+    }
+
+    .section h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      text-align: center;
+      color: #333;
+    }
+
+    .section p {
+      font-size: 1.1em;
+      margin-bottom: 30px;
+      text-align: justify;
+    }
+
+    .card {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+      margin: 20px;
+      flex: 1;
+      text-align: center;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .cards-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .footer p {
+      margin: 0;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 1024px) {
+      header h1 {
+        font-size: 2.5em;
+      }
+
+      .section h2 {
+        font-size: 1.8em;
+      }
+
+      .card {
+        flex: 1 1 45%;
+      }
+
+      nav ul {
+        flex-direction: column;
+      }
+
+      nav ul li {
+        margin: 10px 0;
+      }
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2em;
+      }
+
+      header p {
+        font-size: 1em;
+      }
+
+      .section h2 {
+        font-size: 1.6em;
+      }
+
+      .card {
+        flex: 1 1 100%;
+        margin: 10px 0;
+      }
+
+      nav ul {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav ul li {
+        margin: 8px 0;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 1.8em;
+      }
+
+      header p {
+        font-size: 0.9em;
+      }
+
+      .section h2 {
+        font-size: 1.4em;
+      }
+
+      nav ul {
+        flex-direction: column;
+        padding: 0;
+      }
+
+      nav ul li {
+        margin: 5px 0;
+      }
+
+      .footer p {
+        font-size: 0.9em;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header Section -->
+  <header>
+    <h1>T. Sujatha</h1>
+    <p>Assistant Professor | Researcher | Author | Educator</p>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>Hello! I'm T. Sujatha, an academic and researcher with a passion for computer science and digital image processing. With over 30 years of teaching experience and numerous publications and workshops, I specialize in various software technologies and academic fields.</p>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="section">
+    <h2>Education</h2>
+    <p>I have a diverse academic background, including a Master's degree in Physics, Computer Applications, and multiple M.Phil. degrees in Computer Science and Physics. Currently, I am pursuing my Ph.D. in Digital Image Processing at Dr. M.G.R. Educational & Research Institute, Chennai.</p>
+    <div class="cards-container">
+      <div class="card">
+        <h3>B.Sc. (Physics)</h3>
+        <p>Madurai Kamaraj University (1986–1989) - 79%</p>
+      </div>
+      <div class="card">
+        <h3>M.Sc. (Physics)</h3>
+        <p>Madurai Kamaraj University (1989–1991) - 73%</p>
+      </div>
+      <div class="card">
+        <h3>M.C.A.</h3>
+        <p>Madurai Kamaraj University (1997–2000) - 72%</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="section">
+    <h2>Work Experience</h2>
+    <p>With over 30 years of teaching experience in various institutions, I have served in multiple departments as a Head of Department (HOD) and lecturer. My expertise spans across various programming languages and software tools, and I am currently working as an Assistant Professor at Sindhi College, Chennai.</p>
+    <div class="cards-container">
+      <div class="card">
+        <h3>Assistant Professor</h3>
+        <p>Sindhi College (2002–Present)</p>
+      </div>
+      <div class="card">
+        <h3>Head of Department</h3>
+        <p>Various Departments, Sindhi College (2007–2015)</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Publications Section -->
+  <section id="publications" class="section">
+    <h2>Publications</h2>
+    <p>I have published research papers in renowned journals and conferences on topics such as lossless image compression and text mining. Some of my publications include:</p>
+    <ul>
+      <li><a href="https://ictactjournals.in/ArticleDetails.aspx?id=9493" target="_blank">Lossless Image Compression Using Different Encoding Algorithms for Various Medical Images</a></li>
+      <li><a href="https://advancedengineeringscience.com/article/531.html" target="_blank">Histogram Equalization Analysis of Image Enhancement Algorithms for Lossless Compression</a></li>
+      <li><a href="https://sjcjycl.cn/article/view-2023/03_2068.php" target="_blank">Image Verification and Validation on Lossless Compressed Images Using Huffman Coding</a></li>
+    </ul>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>You can reach me at:</p>
+    <p>Email: <a href="mailto:sujasamykkhan@gmail.com">sujasamykkhan@gmail.com</a></p>
+    <p>Phone: 9444610293 / 7449115669 (WhatsApp)</p>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <p>&copy; 2025 T. Sujatha. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
